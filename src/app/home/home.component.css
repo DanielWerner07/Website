@@ -1,14 +1,16 @@
-
+/* Main Container */
 .main-container {
-  max-width: 900px;
+  max-width: 1200px; /* Increased max-width for larger screens */
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 15px; /* Reduced padding on sides */
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+
+/* Header */
 .header {
   margin-bottom: 40px;
   background-color: #3e8e41;
@@ -18,24 +20,8 @@
   text-align: center;
 }
 
-.logo {
-  max-width: 150px;
-  margin-bottom: 20px;
-}
-
-.company-name {
-  font-size: 2.5em;
-  margin: 0;
-  font-weight: bold;
-}
-
-.tagline {
-  font-size: 1.2em;
-  margin-top: 10px;
-}
-
+/* Hero Section */
 .hero-section {
-  /* background-image: url('assets/images/blueskylogo.jpg'); */
   background-size: cover;
   background-position: center;
   color: white;
@@ -63,12 +49,12 @@
 }
 
 .hero-content h2 {
-  font-size: 2.2em;
+  font-size: 2em;
   margin-bottom: 10px;
 }
 
 .hero-content p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 20px;
 }
 
@@ -87,6 +73,7 @@
   background-color: #45a049;
 }
 
+/* Sections */
 .company-info,
 .contact-info,
 .social-media {
@@ -109,6 +96,7 @@
   margin: 5px 0;
 }
 
+/* Social Media Links */
 .social-media a {
   display: inline-block;
   margin: 0 15px;
@@ -123,6 +111,7 @@
   text-decoration: underline;
 }
 
+/* Footer */
 .footer {
   background-color: #333;
   color: white;
@@ -140,4 +129,72 @@
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .main-container {
+      max-width: 100%;
+      padding: 15px;
+  }
+
+  .header, .hero-section, .company-info, .contact-info, .social-media {
+      padding: 15px;
+      margin-bottom: 30px;
+  }
+
+  .hero-content h2 {
+      font-size: 1.8em;
+  }
+
+  .hero-content p {
+      font-size: 1em;
+  }
+
+  .cta-button {
+      padding: 8px 16px;
+  }
+
+  .company-info h2, .contact-info h2, .social-media h2 {
+      font-size: 1.5em;
+  }
+
+  .company-info p, .contact-info p, .social-media a {
+      font-size: 1em;
+  }
+
+  .social-media a {
+      margin: 0 10px;
+  }
+
+  .footer {
+      padding: 15px;
+      margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h2 {
+      font-size: 1.5em;
+  }
+
+  .hero-content p {
+      font-size: 0.9em;
+  }
+
+  .cta-button {
+      padding: 6px 12px;
+  }
+
+  .company-info h2, .contact-info h2, .social-media h2 {
+      font-size: 1.2em;
+  }
+
+  .company-info p, .contact-info p, .social-media a {
+      font-size: 0.9em;
+  }
+
+  .social-media a {
+      margin: 0 8px;
+  }
 }
