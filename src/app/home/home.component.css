@@ -1,68 +1,143 @@
+
 .main-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header {
-    margin-bottom: 40px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .logo {
-    max-width: 150px;
-    margin-bottom: 20px;
-  }
-  
-  .company-name {
-    font-size: 2.5em;
-    margin: 0;
-  }
-  
-  .tagline {
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
-  
-  .company-info,
-  .contact-info,
-  .social-media {
-    margin-bottom: 40px;
-  }
-  
-  .company-info h2,
-  .contact-info h2,
-  .social-media h2 {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .company-info p,
-  .contact-info p,
-  .social-media a {
-    font-size: 1.1em;
-    color: #555;
-    margin: 5px 0;
-  }
-  
-  .social-media a {
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-  }
-  
-  .social-media a:hover {
-    text-decoration: underline;
-  }
-  
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.header {
+  margin-bottom: 40px;
+  background-color: #3e8e41;
+  color: white;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.company-name {
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.hero-section {
+  background-image: url('assets/images/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  text-align: left;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+
+.company-info,
+.contact-info,
+.social-media {
+  margin-bottom: 40px;
+}
+
+.company-info h2,
+.contact-info h2,
+.social-media h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.company-info p,
+.contact-info p,
+.social-media a {
+  font-size: 1.1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
