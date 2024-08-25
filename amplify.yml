@@ -10,6 +10,7 @@ frontend:
       commands:
         - npm run build
   artifacts:
+    baseDirectory: dist/angular-site
     files:
       - '**/*'
   cache:
